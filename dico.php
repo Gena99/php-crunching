@@ -14,18 +14,13 @@ foreach ($dico as $key => $mot) {
 	if($tailleMot===15){
 		$nombreMotsTrouves++;
 	}
+	
 	$positionW = strpos($mot, 'w');
 	if($positionW !== false){
 		$nombreMotsTrouvesAvecW++;
 	}
-	$positionQ = strpos($mot, 'q', strlen($mot)-1);
-	if($positionQ !== false){
-		$nombreMotsTrouvesAvecQ++;
-	}
-
 
 }
 echo "Combien de mots font exactement 15 caractères ? : ".$nombreMotsTrouves."<br/>";
 echo "Combien de mots contiennent la lettre « w » ? : ".$nombreMotsTrouvesAvecW."<br/>";
-echo 'Combien de mots finissent par la lettre « q » ?'.$nombreMotsTrouvesAvecQ;
 ?>
