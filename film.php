@@ -11,8 +11,15 @@ for ($i=0; $i <10 ; $i++) {
 	$titre = $listeTop100[$i]['title']["label"];
 	echo $i+1 . ' ' . $titre . "<br />";
 }
-
-
+echo '<h2>Classement du film Gravity</h2>';
+for ($i=0; $i<100 ; $i++) { 
+	$titre = $listeTop100[$i]['title']["label"];
+	if ($titre === 'Gravity - Alfonso Cuarón') {
+		echo 'Position du film dans le top 100 : '.$i;
+		# code...
+	}
+	# code...
+}
 
 
 ?>
