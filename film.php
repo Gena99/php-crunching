@@ -18,8 +18,11 @@ for ($i=0; $i<100 ; $i++) {
 		echo 'Position du film dans le top 100 : '.$i;
 		# code...
 	}
-	# code...
-}
+	echo('<h2>Quel est le réalisateur du film the lego movie</h2>');
+	for($i=0; $i<100 ; $i++) { 
+		$titre = $listeTop100[$i]['title']["im:artist"];
+		if ($titre === 'The LEGO Movie') {
+			echo('Les réalisateurs sont : ').$i;
+		}
 
-
-?>
+		?>
